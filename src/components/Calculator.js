@@ -76,35 +76,35 @@ function Calculator() {
             <input type="text" readOnly={true} className="textResult" value={result} />
         </div>
         <div className="grid-container">
-        <div className="item1">
-          <button onClick={clearData}  className="button-operand">AC</button>
+        {/* <div className="item1"> */}
+          <button onClick={clearData}  className="button-operand AC-sign">AC</button>
           {/* <button>+/-</button> */}
           <button value="%"  className="button-operand">%</button>
           <button value="/" onClick={e=>checkOperand(e.target.value)} className="button-operand">/</button>
-        </div>
-        <div className="item2">
+        {/* </div>
+        <div className="item2"> */}
           <button value="7" onClick={e => (setNumber(e.target.value))} className="button-number">7</button>
           <button value="8" onClick={e => (setNumber(e.target.value))} className="button-number">8</button>
           <button value="9" onClick={e => (setNumber(e.target.value))} className="button-number">9</button>
           <button value="*" onClick={e=> (checkOperand(e.target.value))} className="button-operand">*</button>
-        </div>
-        <div className="item3">
+        {/* </div>
+        <div className="item3"> */}
           <button value="4" onClick={e => (setNumber(e.target.value))} className="button-number">4</button>
           <button value="5" onClick={e => (setNumber(e.target.value))} className="button-number">5</button>
           <button value="6" onClick={e => (setNumber(e.target.value))} className="button-number">6</button>
           <button value="-" onClick={e => (checkOperand(e.target.value))} className="button-operand">-</button>
-        </div>
-        <div className="item4">
+        {/* </div>
+        <div className="item4"> */}
           <button value="1" onClick={e => (setNumber(e.target.value))} className="button-number">1</button>
           <button value="2" onClick={e => (setNumber(e.target.value))} className="button-number">2</button>
           <button value="3" onClick={e => (setNumber(e.target.value))} className="button-number">3</button>
           <button value="+" onClick={e => (checkOperand(e.target.value))} className="button-operand">+</button>
-        </div>
-        <div className="item5">
+        {/* </div>
+        <div className="item5"> */}
           <button value="0" onClick={e => (setNumber(e.target.value))} className="button-number">0</button>
           <button value="." onClick={e => (setNumber(e.target.value))} className="button-number">.</button>
-          <button onClick={calculate} className="button-calculate">=</button>
-        </div>
+          <button onClick={calculate} className="button-calculate equal-sign">=</button>
+        {/* </div> */}
         </div>
       </div>
     </div>
